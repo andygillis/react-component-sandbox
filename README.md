@@ -18,12 +18,12 @@ Some interesting details:
 * As you play with the components, you can save changes and see the updates in the browser as you make them. The browser reacts to your changes in real time. This is a fun time-saver.
 * React allows you to create single-page web applications that do a lot with very little code. It builds off of multiple knowledge bases including web application wiring, JavaScript (Node.js), XML, and HTML.
 * React uses a special XML-like syntax called JSX, you see this in most of the component .js files. JSX allows you to model web components in a familiar and pleasing way. The interesting thing is that JSX is transpiled into traditional JavaScript, and that JavaScript can get pretty complex. JSX makes development faster and more enjoyable.
-* To consolidate the various JavaScript transpiled files, a technology called Webpack is used. Webpack essentially consolidates all of the application's JavaScript code into one file called bundle.js. This allows the browser to download all the necessary code in one file, which in turn, enables the React experience. Pay attention to the size of this file as your application grows.
+* To consolidate the various JavaScript transpiled files, a technology called Webpack is used. Webpack essentially consolidates all of the application's JavaScript code into one file called *bundle.js*. This allows the browser to download all the necessary code in one file, which in turn, enables the React experience. Pay attention to the size of this file as your application grows.
 * The `npm start` command is actually correlating to the start script in package.json. This starts the `webpack-dev-server`, which in turn reads in *webpack.config.js*, which then does the transpiling (using Babel), packs the JavaScript, and starts a web server on port 3000. 
 
 ## Components:
 1. **App.js** This is the main parent container component rendered in the page, it contains all the components that comprise the single-page React application. Hence it's name, App.
-2. **Component 1.js** - Component created using ReactDOM.createClass.
+2. **Component 1.js** - Component created using `ReactDOM.createClass`.
 3. **Component 2.js** - Component created using an ES6 class.
 4. **Component 3.js** - Stateless component, note arrow function syntax.
 5. **Component 4.js** - Server-side render (using no JSX).
