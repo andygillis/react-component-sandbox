@@ -30,8 +30,8 @@
 >7. **Clock2.js** - An example of a live stateless component.
 >8. **Menu.js** - Stateless navigation component. Note use of icons, these are fun and free!
 >9. **MessageBanner.js** - Stateless component used by the Message Forms. This illustrates React component hiearchy.
->10. **MessageForm.js** - Stateful component, utilizes MessageBanner. Note how smoothly the form updates the GUI.
->11. **MessageForm2.js** - Stateful component, utilizes MessageBanner. Again, note how smoothly the form updates the GUI.
+>10. **MessageForm.js** - Stateful component, utilizes MessageBanner. Here you can see how JSX is smoothly mixed with HTML to create easily conceived and rendered web components. Also note how smoothly the form updates the GUI.
+>11. **MessageForm2.js** - Stateless component, utilizes MessageBanner. Again the JSX is mixed with HTML and the form still smoothly updates the GUI. The stateless component has a cleaner feel to the component code since there is less complexity.
 >12. **Oops404.js** - Error handling component, used when routing gets an invalid address.
 ## Wiring Examples
 >1. **Routing** - Take a look at Menu.js - there you can see how the single-page routing is wired. To add a menu item, simple add another Link element. This is wired into the app through index.js, where you can see the route paths. Here you get to see some of the simplicity and power of JSX.
