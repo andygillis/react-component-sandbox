@@ -21,7 +21,7 @@ Some things of note:
 >* To consolidate the various JavaScript transpiled files, a technology called Webpack is used. Webpack essentially consolidates all of the application's files into one JavaScript file called bundle.js. This allows the browser to download all necessary code, which enables the React experience. Pay attention to the size of this file as your application grows.
 >* The `npm start` command is actually correlating to the start script in package.json. This starts the webpack-dev-server, which in turn reads in webpack.config.js, which then does the transpiling (using babel), packs the JavaScript, and starts a web server on port 3000. 
 
->## Components
+>## Components:
 >1. **App.js** This is the main parent container component rendered in the page, it contains all the components that comprise the single-page React application. Hence it's name, App.
 >2. **Component 1.js** - Component created using ReactDOM.createClass.
 >3. **Component 2.js** - Component created using an ES6 class.
@@ -34,7 +34,7 @@ Some things of note:
 >10. **MessageForm.js** - Stateful component, utilizes MessageBanner. Here you can see how JSX is smoothly mixed with HTML to create easily conceived and rendered web components. Also note how smoothly the form updates the GUI.
 >11. **MessageForm2.js** - Stateless component, utilizes MessageBanner. Again the JSX is mixed with HTML and the form still smoothly updates the GUI. The stateless component has a cleaner feel to the component code since there is less complexity.
 >12. **Oops404.js** - Error handling component, used when routing gets an invalid address.
->## Wiring Examples
+>## Wiring Examples:
 >1. **Routing** - Take a look at Menu.js - there you can see how the single-page routing is wired. To add a menu item, simple add another Link element. This is wired into the app through index.js, where you can see the route paths. Here you get to see some of the simplicity and power of JSX.
 >2. **Wiring** - The webpage index.html is located in the dist directory and is the entry point. Here you can see the wiring. 
 >>Two things of note:
