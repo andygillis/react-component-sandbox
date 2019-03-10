@@ -27,7 +27,7 @@ Some interesting details:
 3. **Component 2.js** - Component created using an ES6 class.
 4. **Component 3.js** - Stateless component, note arrow function syntax.
 5. **Component 4.js** - Server-side render (using no JSX).
-6. **Clock.js** - An example of a live component with state management.
+6. **Clock.js** - An example of a stateful live component.
 7. **Clock2.js** - An example of a live stateless component.
 8. **Menu.js** - Stateless navigation component. Note use of icons, these are fun and free!
 9. **MessageBanner.js** - Stateless component used by the Message Forms. This illustrates React component hiearchy.
