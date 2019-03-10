@@ -30,12 +30,12 @@
 >7. **Clock2.js** - An example of a live stateless component.
 >8. **Menu.js** - Stateless navigation component. Note use of icons, these are fun and free!
 >9. **MessageBanner.js** - Stateless component used by the Message Forms. This illustrates React component hiearchy.
->10. **MessageForm.js** - Stateful component, utilizes MessageBanner.
->11. **MessageForm2.js** - Stateful component, utilizes MessageBanner.
+>10. **MessageForm.js** - Stateful component, utilizes MessageBanner. Note how smoothly the form updates the GUI.
+>11. **MessageForm2.js** - Stateful component, utilizes MessageBanner. Again, note how smoothly the form updates the GUI.
 >12. **Oops404.js** - Error handling component, used when routing gets an invalid address.
 ## Wiring Examples
 >1. **Routing** - Take a look at Menu.js - there you can see how the single-page routing is wired. To add a menu item, simple add another Link element. This is wired into the app through index.js, where you can see the route paths. Here you get to see some of the simplicity and power of JSX.
 >2. **Wiring** - The webpage index.html is located in the dist directory and is the entry point. Here you can see the wiring. 
 >>Two things of note:
 >>* The div tag with id="react-container" is actually referencing the class in index.js (which is consolidated into bundle.js), and this is the entry point for the React app. In index.js, you can see the route paths (referenced above) and the rendering of the react-container. The route paths reference App.js, the parent container of the web application.
->>* The script tag references bundle.js, this is our consolidated JavaScript of our application, transpiled and bundled.
+>>* The script tag references bundle.js, this is the consolidated JavaScript of our application, transpiled and bundled.
