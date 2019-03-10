@@ -22,7 +22,7 @@ Some interesting details:
 * The `npm start` command is actually correlating to the start script in package.json. This starts the `webpack-dev-server`, which in turn reads in *webpack.config.js*, which then does the transpiling (using Babel), packs the JavaScript, and starts a web server on port 3000. 
 
 ## Components:
-1. **App.js** This is the main parent container component rendered in the page, it contains all the components that comprise the single-page React application. Hence it's name, App.
+1. **App.js** This is the main parent container component rendered in the page, it contains all the components that comprise the single-page React application. Hence it's name, `App`.
 2. **Component 1.js** - Component created using `ReactDOM.createClass`.
 3. **Component 2.js** - Component created using an ES6 class.
 4. **Component 3.js** - Stateless component, note arrow function syntax.
