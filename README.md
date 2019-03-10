@@ -14,7 +14,7 @@ This demo also contains basic wiring examples of single-page navigation (routing
 
 The intended audience is Software Engineers who are either learning React or just want a simple reference to build off of. Most of the basic building blocks required to create a React single-page web application are illustrated here.
 
-Some things of note:
+Some interesting details:
 >* As you play with the components, you can save changes and see the updates in the browser as you make them. The browser reacts to your changes in real time. This is a fun time-saver.
 >* React allows you to create single-page web applications that do a lot with very little code. It builds off of multiple knowledge bases including web application wiring, JavaScript (Node.js), XML, and HTML.
 >* React uses a special XML-like syntax called JSX, you see this in most of the component .js files. JSX allows you to model web components in a familiar and pleasing way. The interesting thing is that JSX is transpiled into traditional JavaScript, and that JavaScript can get pretty complex. JSX makes development faster and more enjoyable.
@@ -35,8 +35,7 @@ Some things of note:
 >11. **MessageForm2.js** - Stateless component, utilizes MessageBanner. Again the JSX is mixed with HTML and the form still smoothly updates the GUI. The stateless component has a cleaner feel to the component code since there is less complexity.
 >12. **Oops404.js** - Error handling component, used when routing gets an invalid address.
 >## Wiring Examples:
->1. **Routing** - Take a look at Menu.js - there you can see how the single-page routing is wired. To add a menu item, simple add another Link element. This is wired into the app through index.js, where you can see the route paths. Here you get to see some of the simplicity and power of JSX.
+>1. **Routing** - Take a look at Menu.js, here you can see how the single-page routing is wired. To add a menu item, simply add another Link element. The routing is defined using a `Router` in index.js, where you can also see the defined route paths. This is a good example of the simplicity and power of React and JSX.
 >2. **Wiring** - The webpage index.html is located in the dist directory and is the entry point. Here you can see the wiring. 
->>Two things of note:
->>* The div tag with id="react-container" is actually referencing the class in index.js (which is consolidated into bundle.js), and this is the entry point for the React app. In index.js, you can see the route paths (referenced above) and the rendering of the react-container. The route paths reference App.js, the parent container of the web application.
->>* The script tag references bundle.js, this is the consolidated JavaScript of our application, transpiled, and bundled.
+>* The div tag with `id="react-container"` is actually referencing the class in index.js (which is ultimately consolidated into bundle.js). This is the entry point for the React app. In index.js, you can see the route paths (referenced above) and the rendering of the react-container. The route paths reference App.js, the parent container of the web application.
+>* The script tag references bundle.js, this is the consolidated JavaScript of the application, transpiled and bundled.
