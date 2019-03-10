@@ -36,6 +36,6 @@ Some interesting details:
 12. **Oops404.js** - Error handling component, used when routing gets an invalid address.
 ## Wiring Examples:
 1. **Routing** - Take a look at Menu.js, here you can see how the single-page routing is wired. To add a menu item, simply add another Link element. The routing is defined using a `Router` in index.js, where you can also see the defined route paths. This is a good example of the simplicity and power of React and JSX.
-2. **Wiring** - The webpage index.html is located in the dist directory and is the entry point. Here you can see the wiring. 
-	* The div tag with `id="react-container"` is actually referencing the class in index.js (which is ultimately consolidated into bundle.js). This is the entry point for the React app. In index.js, you can see the route paths (referenced above) and the rendering of the react-container. The route paths reference App.js, the parent container of the web application.
-	* The script tag references bundle.js, this is the consolidated JavaScript of the application, transpiled and bundled.
+2. **Wiring** - The HTML page index.html is located in the dist directory and is the entry point. Here you can see where the wiring begins. 
+	* The div tag with `id="react-container"` is actually referencing the class in index.js (which is ultimately consolidated into bundle.js). This is the entry point for the React app. In index.js, you can see the `Router` and the rendering of the react-container. The `Router` sends route strings to the appropriate component, in this case App, the parent container of the web application. The App component then uses the `Link` tags' `to` attribute to show the appropriate component, in this case using a ternary expression. This creates code that looks very clean in App.js.
+	* The script tag references bundle.js, the consolidated JavaScript of the application, which has been transpiled and bundled.
