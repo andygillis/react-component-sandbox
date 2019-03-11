@@ -31,8 +31,8 @@ Some interesting details:
 7. **Clock2.js** - An example of a live stateless component.
 8. **Menu.js** - Stateless navigation component. Note the use of icons, these are fun and free!
 9. **MessageBanner.js** - Stateless component used by the Message Forms. This illustrates React component hiearchy.
-10. **MessageForm.js** - Stateful form component, utilizes MessageBanner. Here you can see how JSX is smoothly mixed with HTML to create easily conceived and rendered web components. Also note how smoothly the form updates the GUI.
-11. **MessageForm2.js** - Stateless form component, utilizes MessageBanner. Again the JSX is mixed with HTML and the form still smoothly updates the GUI. The stateless component has a cleaner feel to the component code since there is less complexity.
+10. **MessageForm.js** - Stateful form component, utilizes `MessageBanner`. Here you can see how JSX is smoothly mixed with HTML to create easily conceived and rendered web components. Also note how smoothly the form updates the GUI.
+11. **MessageForm2.js** - Stateless form component, utilizes `MessageBanner`. Again the JSX is mixed with HTML and the form still smoothly updates the GUI. The stateless component has a cleaner feel to the component code since there is less complexity.
 12. **Oops404.js** - Error handling component, this is used when routing processes an invalid address.
 ## Wiring Examples:
 1. **Wiring** - The HTML page *index.html* is located in the `dist` directory and is the entry point. Here you can see where the wiring begins. 
